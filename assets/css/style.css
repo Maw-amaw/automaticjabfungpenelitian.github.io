@@ -1,0 +1,280 @@
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 32px;
+}
+
+
+/* jumbotron */
+
+.jumbotron {
+    background-image: url(../img/penelitihan.jpg);
+    background-size: cover;
+    height: 550px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+
+/* info panel */
+
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px;
+}
+
+.info-panel img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* penjelaan */
+
+.carousel-inner {
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.penjelasan1 {
+    background-color: #003afa;
+    border-radius: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+
+/* form */
+
+.form {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.form h3 {
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.form h3 span {
+    font-weight: 500;
+}
+
+.form p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 25px 0;
+}
+
+
+/*cara */
+
+.cara {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.cara h3 {
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.cara h3 span {
+    font-weight: 500;
+}
+
+.cara p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 25px 0;
+}
+
+.cara a {
+    margin-bottom: 20px;
+}
+
+.cara .gambar2 {
+    display: none;
+}
+
+
+/* utility */
+
+.tombol {
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.footer-20192 {
+    position: relative;
+    color: #fff;
+    padding: 7rem 0;
+    background-color: #154281;
+}
+
+.footer-20192 .container {
+    position: relative;
+}
+
+.footer-20192 h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.footer-20192 .links li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    display: block;
+}
+
+.footer-20192 .links li a {
+    color: #d4d5da;
+}
+
+.footer-20192 .links li a:hover {
+    color: #fff;
+}
+
+.footer-20192 .social li {
+    display: inline-block;
+    position: relative;
+}
+
+.footer-20192 .social li a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #fff;
+}
+
+.footer-20192 .social li a>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.footer-20192 .footer-logo {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+}
+
+.footer-20192 .copyright {
+    color: #ffffff;
+}
+
+.footer-20192 .cta {
+    padding: 20px;
+    background-color: #0011ff;
+    top: -150px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.footer-20192 .cta h2,
+.footer-20192 .cta h3 {
+    line-height: 1.5;
+}
+
+.footer-20192 .cta h3 {
+    font-size: 20px;
+}
+
+
+/* desktop */
+
+@media (min-width: 992px) {
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0, 7);
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #003afa !important;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+    .form {
+        text-align: left;
+    }
+    .cara {
+        text-align: right;
+    }
+    .cara .gambar1 {
+        display: none;
+    }
+    .cara .gambar2 {
+        display: block;
+    }
+}
